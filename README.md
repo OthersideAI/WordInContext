@@ -27,7 +27,7 @@ Newer versions of davinci have generally outperformed older ones, with the excep
 | text-davinci-002   | 39%            | 63%         | **65%**     |
 | text-davinci-003   | 68%            | **69%**     | 67%         |
 
-Since we've been using code a lot for our prmopts, we dove a bit more into how different ways of implementing code prompts change the performance. First, we tried a [0 shot](##Code_0shot_scratch) that output a JSON including a thinkthru output of meaning. Then, we tried just having it hallucinate that it computed that intermediary step. Finally, we just tried having it generate without it to see if that hallucinated helped anything.
+Since we've been using code a lot for our prmopts, we dove a bit more into how different ways of implementing code prompts change the performance. First, we tried a [0 shot](#Code_0shot_scratch) that output a JSON including a thinkthru output of meaning. Then, we tried just having it [hallucinate that it computed that intermediary step](#code_0shot_thinking). Finally, we just tried having it generate [without any intermediary steps](#code_0shot_noscratch) to see if that hallucinated helped anything.
 
 Code Prompts
 
