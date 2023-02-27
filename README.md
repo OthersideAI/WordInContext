@@ -4,9 +4,9 @@ In their initial paper [cite] the authors thought that davinci wasn't capable of
 
 Kind of cool, in our initial runs we got
 
-| Model Name       | Score |
-| ---------------- | ----- |
-| Davinci          | 60%   |
-| text-davinci-001 | 61%   |
-| text-davinci-002 | 39%   |
-| text-davinci-003 | 68%   |
+| Model Name         | Score |
+| ------------------ | ----- |
+| Davinci (original) | 60%   |
+| text-davinci-001   | 61%   |
+| text-davinci-002   | 39%   |
+| text-davinci-003   | 68%   |
