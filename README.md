@@ -1,6 +1,6 @@
 # Re-Running Word in Context
 
-In their the [Initial 2020 GPT3 Paper](https://arxiv.org/abs/2005.14165) the authors thought that davinci wasn't capable of word in context. A few years ago, one of our devs had [posted on an obscure wiki](http://gptprompts.wikidot.com/linguistics:word-in-context#toc5) that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. We figured we'd see the current state of the models for conducting word in context to help show that some features of GPT3 have been around for a while and are continuing to improve.
+In OpenAI's initial GPT3 paper [Language Models are Few-Shot Learners (2020)](https://arxiv.org/abs/2005.14165), the authors thought that davinci wasn't capable of word in context (WIC). Later that year, one of our devs had [posted on an obscure wiki](http://gptprompts.wikidot.com/linguistics:word-in-context#toc5) that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. GPT's ability to do WIC isn't particularly special or controversial, but it's an interesting emergent capability that's pretty cool. We figured we'd see the current state of the models for conducting word in context to help show that some features of GPT3 have been around for a while and are continuing to improve.
 
 All of our code and results are in notebooks and json files in the included folders. We ran against the dev set as done in the 2020 paper. We should have a blog post up on this at some point but for now, here's the readme.
 
