@@ -17,7 +17,7 @@ Code Prompts
 
 | Model Name         | Code_0shot_scratch | Code_0shot_thinking | Code_0shot_noscratch |
 | ------------------ | ------------------ | ------------------- | -------------------- |
-| Davinci (original) | 47%                | -                   |
-| text-davinci-001   | 52%                | -                   |
-| text-davinci-002   | 55%                | 50%                 |
-| text-davinci-003   | 61%                | 60%                 |
+| Davinci (original) | 47%                | -                   | -                    |
+| text-davinci-001   | 52%                | -                   | -                    |
+| text-davinci-002   | 55%                | 50%                 | 50%                  |
+| text-davinci-003   | 61%                | 60%                 | 59%                  |
