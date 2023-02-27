@@ -18,7 +18,7 @@ and open up the notebook you want to run from any of the folders. They're labele
 
 # Results
 
-Kind of cool, in our initial runs we got
+Newer versions of davinci have generally outperformed older ones, with the exception of text-davinci-002 seeming to do poorly on one of them. We should look into that in the JSON files to see what's going on because it's a bit weird. Also we can see it looks like the code version improved performance for 002 over JSON but not for 003.
 
 | Model Name         | Textual_10shot | JSON_10shot | Code_10shot |
 | ------------------ | -------------- | ----------- | ----------- |
@@ -27,7 +27,7 @@ Kind of cool, in our initial runs we got
 | text-davinci-002   | 39%            | 63%         | **65%**     |
 | text-davinci-003   | 68%            | **69%**     | 67%         |
 
-We dove a bit more into code :) basically 3 methods. First, we do an intermediary step on the generated JSON for meaning. Then, we tried just having it hallucinate that it computed that intermediary step. Finally, we just tried having it generate without it to see if that hallucinated helped anything.
+Since we've been using code a lot for our prmopts, we dove a bit more into how different ways of implementing code prompts change the performance. First, we tried a [0 shot](##Code_0shot_scratch) that output a JSON including a thinkthru output of meaning. Then, we tried just having it hallucinate that it computed that intermediary step. Finally, we just tried having it generate without it to see if that hallucinated helped anything.
 
 Code Prompts
 
