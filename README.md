@@ -2,6 +2,8 @@
 
 In their the [Initial 2020 GPT3 Paper](https://arxiv.org/abs/2005.14165) the authors thought that davinci wasn't capable of word in context. Early bloggers had found that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. We figured we'd see the current state of the models for conducting word in context to help show that some features of GPT3 have been around for a while and are continuing to improve.
 
+All of our code and results are in notebooks and json files in the included folders.
+
 Kind of cool, in our initial runs we got
 
 | Model Name         | Textual_10shot | JSON_10shot | Code_10shot |
@@ -139,5 +141,33 @@ The Code_0shot_thinking prompt is a 0 shot prompt that can be found in any of th
 Instead of explicitly writing out the `Sense1` and `Sense2` steps from the `Code_0shot_scratch` prompt, we instead have the model hallucinate that it computed those steps. It looks like this:
 
 ```
+interface comparison{
+    "Similar": bool, // whether the two meaings of the word are similar or used to mean different things, should be true | false
+}
 
+determineWordSimilarSense(word, context1, context2) : comparison =>{
+    senseOfFirstWord = ai.computeSense(word, context1) // return the sense of the word in the first context
+    senseOfSecondWord = ai.computeSense(word, context2) // return the sense of the word in the second context
+    return ai.compare(word, senseOfFirstWord, senseOfSecondWord) // return the comparison object
+}
+
+//This returns the keys inside of double quotes ("KEY") so we can parse with JSON
+```
+
+## Code_0shot_noscratch
+
+Finally, we check without having it hallucinate to see whether the hallucination helped or not. See the [CodePromptYolo](CodePromptYolo) folder for the code.
+
+The prompts look like this:
+
+```
+interface comparison{
+    "Similar": bool, // whether the two meaings of the word are similar or used to mean different things, should be true | false
+}
+
+determineWordSimilarSense(word, context1, context2) : comparison =>{
+    return ai.compare(word, context1, context2) // return the comparison object for if the sense of thr word in both contexts is similar
+}
+
+//This returns the keys inside of double quotes ("KEY") so we can parse with JSON
 ```
