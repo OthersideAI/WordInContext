@@ -1,8 +1,22 @@
 # Re-Running Word in Context
 
-In their the [Initial 2020 GPT3 Paper](https://arxiv.org/abs/2005.14165) the authors thought that davinci wasn't capable of word in context. Early bloggers had found that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. We figured we'd see the current state of the models for conducting word in context to help show that some features of GPT3 have been around for a while and are continuing to improve.
+In their the [Initial 2020 GPT3 Paper](https://arxiv.org/abs/2005.14165) the authors thought that davinci wasn't capable of word in context. A few years ago, one of our devs had [posted on an obscure wiki](http://gptprompts.wikidot.com/linguistics:word-in-context#toc5) that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. We figured we'd see the current state of the models for conducting word in context to help show that some features of GPT3 have been around for a while and are continuing to improve.
 
-All of our code and results are in notebooks and json files in the included folders.
+All of our code and results are in notebooks and json files in the included folders. We ran against the dev set as done in the 2020 paper. We should have a blog post up on this at some point but for now, here's the readme.
+
+## Running the Code
+
+To run the code, download this repo. Then run
+
+`pip install -r requirements.txt`
+
+Once that's installed, run
+
+`jupyter notebook`
+
+and open up the notebook you want to run from any of the folders. They're labeled by which model they use (which is pretty much the only difference between the .ipynb files in each of the folders - the prompts are the same within each folder). They also save the results to a handy json folder which is already included.
+
+# Results
 
 Kind of cool, in our initial runs we got
 
