@@ -4,9 +4,9 @@ In their initial paper [cite] the authors thought that davinci wasn't capable of
 
 Kind of cool, in our initial runs we got
 
-| Model Name         | Textual | JSON    | Codex10 |
-| ------------------ | ------- | ------- | ------- |
-| Davinci (original) | **60%** | 57%     | 55%     |
-| text-davinci-001   | **61%** | 58%     |         |
-| text-davinci-002   | 39%     | 63%     | **65%** |
-| text-davinci-003   | 68%     | **69%** |
+| Model Name | Textual | JSON | Code_x10 | Code_x0 |
+| ------------------ | ------- | ------- | ------- | |
+| Davinci (original) | **60%** | 57% | 55% | |
+| text-davinci-001 | **61%** | 58% | 52% | |
+| text-davinci-002 | 39% | 63% | **65%** | |
+| text-davinci-003 | 68% | **69%** | 67% | |
