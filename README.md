@@ -1,6 +1,6 @@
 # Re-Running Word in Context
 
-In their initial paper [cite] the authors thought that davinci wasn't capable of word in context. Early bloggers had found that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. We figured we'd see the current state of the models for conducting word in context to see what's what.
+In their the [Initial 2020 GPT3 Paper](https://arxiv.org/abs/2005.14165) the authors thought that davinci wasn't capable of word in context. Early bloggers had found that it was possible to do it using a thinkthru step, but hadn't done a readable writeup. We figured we'd see the current state of the models for conducting word in context to help show that some features of GPT3 have been around for a while and are continuing to improve.
 
 Kind of cool, in our initial runs we got
 
@@ -21,3 +21,5 @@ Code Prompts
 | text-davinci-001   | 52%                | -                   | -                    |
 | text-davinci-002   | 55%                | 50%                 | 50%                  |
 | text-davinci-003   | 61%                | 60%                 | 59%                  |
+
+## Examples of Prompts
