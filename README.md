@@ -6,7 +6,7 @@ Kind of cool, in our initial runs we got
 
 | Model Name         | Textual | JSON    | Code_x10 | Code_x0 |
 | ------------------ | ------- | ------- | -------- | ------- |
-| Davinci (original) | **60%** | 57%     | 55%      |         |
-| text-davinci-001   | **61%** | 58%     | 52%      |         |
-| text-davinci-002   | 39%     | 63%     | **65%**  |         |
-| text-davinci-003   | 68%     | **69%** | 67%      |         |
+| Davinci (original) | **60%** | 57%     | 55%      | 47%     |
+| text-davinci-001   | **61%** | 58%     | 52%      | 52%     |
+| text-davinci-002   | 39%     | 63%     | **65%**  | 55%     |
+| text-davinci-003   | 68%     | **69%** | 67%      | 61%     |
