@@ -40,6 +40,7 @@ Code Prompts
 | text-davinci-002   | 55%                | 50%                 | 50%                  |
 | text-davinci-003   | 61%                | 60%                 | 59%                  |
 | gpt-3.5-turbo      | 56%                | 61%                 | 61%                  |
+| gpt-4              | 73%                | 72%                 | 72%                  |
 
 # Few Shot Prompts
 
