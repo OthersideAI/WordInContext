@@ -27,6 +27,8 @@ Newer versions of davinci have generally outperformed older ones, with the excep
 | text-davinci-002   | 39%            | 63%         | **65%**     |
 | text-davinci-003   | 68%            | **69%**     | 67%         |
 | gpt-3.5-turbo      | 60%            | **69%**     | 67%         |
+| claude-instant-v1  | 51%            | **70%**     | 67%         |
+| claude-v1          | 70%            | **71%**     | 70%%        |
 | gpt-4              | 74%            | **75%**     | **75%**     |
 
 Since we've been using code a lot for our prmopts, we dove a bit more into how different ways of implementing code prompts change the performance. First, we tried a [0 shot](#Code_0shot_scratch) that output a JSON including a thinkthru output of meaning. Then, we tried just having it [hallucinate that it computed that intermediary step](#code_0shot_thinking). Finally, we just tried having it generate [without any intermediary steps](#code_0shot_noscratch) to see if that hallucinated helped anything. (We stopped running them on original and 001 because things started breaking and it was pretty clear that they weren't getting anything out of it although maybe we should go back and run them)
@@ -38,9 +40,11 @@ Code Prompts
 | Davinci (original) | 47%                | -                   | -                    |
 | text-davinci-001   | 52%                | -                   | -                    |
 | text-davinci-002   | 55%                | 50%                 | 50%                  |
-| text-davinci-003   | 61%                | 60%                 | 59%                  |
-| gpt-3.5-turbo      | 56%                | 61%                 | 61%                  |
-| gpt-4              | 73%                | 72%                 | 72%                  |
+| claude-instant-v1  | **58%**            | 55%                 | 51%                  |
+| text-davinci-003   | **61%**            | 60%                 | 59%                  |
+| gpt-3.5-turbo      | 56%                | **61%**             | 61%                  |
+| claude-v1          | **66%**            | 63%                 | 64%                  |
+| gpt-4              | **73%**            | 72%                 | 72%                  |
 
 # Few Shot Prompts
 
